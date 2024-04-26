@@ -9,14 +9,15 @@ import java.awt.*;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.Scanner;
 
 public class WeddingApplication {
 
     public static void main(String[] args) throws IOException, FontFormatException {
-//        Scanner scanner = new Scanner(System.in);
-//        System.out.print("Guest Name: ");
-//        String guestName = scanner.nextLine();
-        generate("THE MAKUVISE FAMILY");
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Guest Name: ");
+        String guestName = scanner.nextLine();
+        generate(guestName);
     }
 
     // https://www.baeldung.com/java-add-text-to-image
